@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Розгалужений обчислювальний процес</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Розгалужений обчислювальний процес</h2>
+    <div class="input-section">
+        <label for="xStart">Початкове значення x: </label>
+        <input type="number" id="xStart" value="-6"><br><br>
+        <label for="xEnd">Кінцеве значення x: </label>
+        <input type="number" id="xEnd" value="6"><br><br>
+        <label for="step">Крок зміни x: </label>
+        <input type="number" id="step" value="2"><br><br>
+        <button onclick="computeAndDisplayValues()">Обчислити</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>x</th>
+                <th>V(x)</th>
+            </tr>
+        </thead>
+        <tbody id="resultsTableBody">
+        </tbody>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
